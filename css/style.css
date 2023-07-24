@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat&family=Space+Mono:wght@400;700&display=swap');
+
+:root {
+    --main-font: 'Space Mono', monospace;
+    --second-font: 'Inconsolata', monospace;
+    --third-font: 'Montserrat', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.site-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 110px;
+}
+
+h3 {
+    top: 0;
+    position: fixed;
+    font-size: 24px;
+    letter-spacing: -1.92px;
+    font-family: var(--second-font);
+}
+
+.main-wrapper {
+    display: flex;
+}
+
+.img-wrapper {
+    margin-right: 60px;
+}
+
+img {
+    width: 539.224px;
+    height: 447.426px;
+}
+
+.desc-img {
+    width: 586px;
+}
+
+.desc-img h1 {
+    color: var(--gray-1, #333);
+    font-family: Space Mono;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -2.24px;
+}
+
+.desc-img p {
+    width: 381px;
+    color: #4F4F4F;
+    font-size: 24px;
+    letter-spacing: -0.84px;
+    font-family: var(--main-font);
+}
+
+.desc-img button {
+    background-color: #333333;
+    width: 216px;
+    height: 68px;
+}
+
+.desc-img .detail-btn {
+    font-family: var(--main-font);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: -0.49px;
+    color: #fff;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+footer p {
+    font-family: var(--third-font);
+    font-size: 14px;
+    color: #BDBDBD;
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .site-wrapper {
+        padding: 5%;
+    }
+
+    .main-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-wrapper {  
+        display: flex;
+        justify-content: center;
+        margin-right: 0;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .desc-img {
+        width: 100%;
+    }
+
+    .desc-img h1 {
+        font-size: 48px;
+    }
+
+    .desc-img p {
+        width: 100%;
+        font-size: 18px;
+        font-weight: 400;
+    }
+}
