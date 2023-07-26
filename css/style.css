@@ -87,7 +87,7 @@ footer p {
     color: #BDBDBD;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
     body {
         display: flex;
         flex-direction: column;
